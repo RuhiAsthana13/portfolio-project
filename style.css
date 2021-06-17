@@ -1,3 +1,43 @@
-h1{
-    color: blueviolet;
+*{
+    background-color: #393E46;
 }
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#222831;
+    color:white;
+    font-size:28px;
+    font-weight:200;
+    height:56px;
+    font-family:poppins;
+    padding-right:20px;
+    padding-left:20px;
+  }
+  a{
+    color:white;
+    font-size: 16px;
+    text-decoration:none;
+    padding-right:36px;
+    font-weight:100;
+    background-color:#222831;
+  }
+  #first{
+    display: flex;
+    align-items:center;
+    background-color:#222831;
+  }
+  a::before{
+    content:""; 
+  }
+  a::after{
+    content:"";
+    display:block;
+    height:1px;
+    width:0;
+    background-color:white;
+    transition: width .3s;
+  }
+  a:hover::after{
+    width:100%;
+  }

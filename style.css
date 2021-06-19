@@ -1,45 +1,98 @@
 *{
-    background-color: #393E46;
-    margin:0;
-    padding:0;
+  background-color: #393E46;
+  margin:0;
+  padding:0;
+box-sizing: border-box;
 }
+
 .header{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    background-color:#222831;
-    color:white;
-    font-size:28px;
-    font-weight:200;
-    height:56px;
-    font-family:poppins;
-    padding-right:20px;
-    padding-left:20px;
-  }
-  .header a{
-    color:white;
-    font-size: 16px;
-    text-decoration:none;
-    padding-right:36px;
-    font-weight:100;
-    background-color:#222831;
-  }
-  #first{
-    display: flex;
-    align-items:center;
-    background-color:#222831;
-  }
-  .header a::before{
-    content:""; 
-  }
-  .header a::after{
-    content:"";
-    display:block;
-    height:1px;
-    width:0;
-    background-color:white;
-    transition: width .3s;
-  }
-  .header a:hover::after{
-    width:100%;
-  }
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  background-color:#222831;
+  color:white;
+  font-size:28px;
+  font-weight:200;
+  height: auto;
+  font-family:poppins;
+  padding-right:20px;
+  padding-left:20px;
+}
+.header a{
+  color:white;
+  font-size: 16px;
+  text-decoration:none;
+  /*padding-top: 20px;*/
+  padding-right:36px;
+  font-weight:100;
+  background-color:#222831;
+}
+ul{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:space-between;
+  list-style-type:none;
+  background-color:#222831;
+}
+ul li {
+background-color:#222831;
+height: auto;
+padding: 0 20px;
+}
+.header a::before{
+  content:""; 
+}
+.header a::after{
+  content:"";
+  display:block;
+  height:1px;
+  width:0;
+  background-color:white;
+  transition: width .3s;
+}
+.header a:hover::after{
+  width:100%;
+}
+@media (max-width: 992px){
+#nav-icon{
+  display: inline-block;
+/*     justify-self: flex-end; */
+  width:32px;
+  height:20px;
+  position:relative;
+  cursor:pointer;
+}
+#nav-icon span{
+  display:block;
+  height:4px;
+  position:absolute;
+  background-color:white;
+  border-radius:10px;
+  width:100%;
+}
+#nav-icon span:nth-child(1){
+  top:0px;
+}
+#nav-icon span:nth-child(2){
+  top:8px;
+}
+#nav-icon span:nth-child(3){
+  top:16px;
+}
+ul{
+  width:100%;
+  top: 56px;
+  position: absolute;
+display:block;
+  height:0px;
+  overflow-y:scroll;
+  transition:0.25s;
+  background-color:#222831;
+}
+ul.open{
+  height:180px;
+}
+}

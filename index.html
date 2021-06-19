@@ -9,13 +9,23 @@
 </head>
 <body>
     <div class="header">
-        <div style="background-color:#222831;">Ruhi</div>
-        <div id="first">
-          <a class="link" href="#">Home</a>
-          <a class="link" href="#">About</a>
-          <a class="link"href="#">Skills</a>
-          <a class="link"href="#">Contact</a>
-        </div>
-      </div>
+    <div style="background-color:#222831;">Ruhi</div>
+    <div id="nav-icon" onclick="clicknavicon()">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    <ul>
+    <li class="first"><a class="link" href="#">Home</a></li>
+    <li class="first"><a class="link" href="#">About</a></li>
+    <li class="first"><a class="link" href="#">Skills</a></li>
+    <li class="first"><a class="link" href="#">Contact</a></li>
+    </ul>
+    </div>
+    <script>
+      function clicknavicon(){
+        document.querySelector("ul").classList.toggle("open");
+      }
+    </script>
 </body>
 </html>

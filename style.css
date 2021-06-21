@@ -2,7 +2,7 @@
   background-color: #393E46;
   margin:0;
   padding:0;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header{
@@ -14,7 +14,7 @@ box-sizing: border-box;
   color:white;
   font-size:28px;
   font-weight:200;
-  height: auto;
+  height: 56px;
   font-family:poppins;
   padding-right:20px;
   padding-left:20px;
@@ -25,29 +25,29 @@ box-sizing: border-box;
   font-size: 16px;
   text-decoration:none;
   /*padding-top: 20px;*/
-  padding-right:36px;
+  /*padding-right:36px;*/
   font-weight:100;
   background-color:#222831;
 }
 ul{
-  padding-top: 28px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content:space-between;
-  list-style-type:none;
-  background-color:#222831;
-
-  padding-bottom: 0px;
+    /*padding-top: 28px;*/ 
+    /* height: 56px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: #222831;
+    /* padding-bottom: 0px;*/
 }
 ul li {
-background-color:#222831;
-height: auto;
-/*padding-top: 28px;*/
-padding: 0 20px;
-padding-top: 0px;
-padding-bottom: 0px;
+  line-height: initial;
+  background-color: #222831;
+  /* height: 20px; */
+  /* padding-top: 28px; */
+  padding: 0 20px;
+  padding-top: 0px;
+  /* padding-bottom: 0px;*/
 }
 .header a::before{
   content:""; 
@@ -93,25 +93,26 @@ padding-bottom: 0px;
   top:16px;
 }
 ul{
-  width:100%;
-  top: 50px;
-  position: absolute;
-  display:block;
-  height:0px;
-  overflow-y:scroll;
-  transition:0.25s;
-  background-color:#222831;
-  padding-top: 0px;
-  padding-bottom: 0px;
+    width: 100%;
+    top: 64px;
+    position: absolute;
+    display: block;
+    height: 0px;
+    overflow-y: scroll;
+    transition: 0.25s;
+    background-color: #222831;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 ul li {
-  background-color:#222831;
-  height: 52px;
-  /*padding-top: 28px;*/
-  padding: 0 20px;
+  background-color: #222831;
+    /* height: 52px; */
+    line-height: initial;
+    /* padding-top: 28px; */
+    padding: 0 20px;
   }
 ul.open{
-  height:150px;
+  height:140px;
 }
 #nav-icon.jojo span:nth-child(1){
   top:16px;

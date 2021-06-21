@@ -171,4 +171,45 @@ ul.open{
   font-weight: 80;
   border-bottom:1px solid #FF7D97;
 }
-
+@media (max-width: 670px){
+  .box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-right:100px;
+    margin-left:100px;
+    margin-top: 20px;
+    gap:8px;
+  }
+    .box img {
+    border-radius:10px;
+    image-orientation: center;
+    width:200px;
+    height:240px;
+    border-radius:10px;
+    box-shadow:8px 8px 2px 1px #2D363F;
+  }
+    .text span{
+    font-size:80px;
+    font-family: Allura;
+    line-height:60px;
+    color:#FFA987;
+  }
+    .text p{
+    font-size:16px;
+    font-family:poppins;
+    color:white;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+  .text #in{
+    font-size:16px;
+    font-family:poppins;
+    color:white;
+    font-weight: 80;
+    border-bottom:1px solid #FF7D97;
+    line-height:28px;
+  }
+  }
+  

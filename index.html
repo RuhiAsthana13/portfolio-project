@@ -16,10 +16,10 @@
     <span></span>
     </div>
     <ul>
-    <li class="firsti"><a class="link" href="#home">Home</a></li>
-    <li class="firsti"><a class="link" href="#about">About</a></li>
-    <li class="firsti"><a class="link" href="#skills">Skills</a></li>
-    <li class="firsti"><a class="link" href="#">Contact</a></li>
+    <li><a class="nav-link" href="#home">Home</a></li>
+    <li><a class="nav-link" href="#about">About</a></li>
+    <li><a class="nav-link" href="#skills">Skills</a></li>
+    <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </div>
     <section class="home" id="home">
@@ -84,10 +84,40 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="full">
+      <span class="bun">Want to share ideas or just say hii? Hit me up on:</span>
+      <div class="account">
+        <a target ="_blank"href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=sanskruti_a@ch.iitr.ac.in&tf=1"><img src="Vector-2.svg" alt="pic1"></a>
+        <a target ="_blank"href="https://www.linkedin.com/in/sanskruti-asthana-b943a31b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B82lMWsu5RxiAhLGMcYidxg%3D%3D"><img src="Group 332.svg" alt="pic1"></a>
+        <a target ="_blank"href="https://github.com/RuhiAsthana13"><img src="Vector-1.svg" alt="pic1"></a>
+        <a target ="_blank"href="https://instagram.com/ruhiasthana?utm_medium=copy_link"><img src="Group 340.svg" alt="pic1"></a>
+        <a target ="_blank"href="https://touch.facebook.com/profile.php?id=100004713159554&ref=content_filter"><img src="Vector.svg" alt="pic1"></a>
+      </div>
+      <span>Made with love by ruhi</span>
+      </div>
+    </section>
     <script>
       function clicknavicon(){
       document.querySelector("ul").classList.toggle("open");
       document.querySelector("#nav-icon").classList.toggle("jojo");
+      }
+
+      const allNavLinks = document.querySelectorAll(".nav-link")
+      const sections = document.querySelectorAll('body > section');
+ 
+      window.addEventListener('scroll', changeActiveLink);
+ 
+      function changeActiveLink() {
+      let index = sections.length - 1;
+ 
+      while (window.scrollY + 50 < sections[index].offsetTop) {
+       index = index - 1;
+      }
+ 
+      allNavLinks.forEach(function (link) {         
+      link.classList.remove('active') });
+      allNavLinks[index].classList.add('active');
       }
     </script>
 </body>

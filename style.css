@@ -3,6 +3,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .header{
@@ -470,3 +471,45 @@ ul.open{
     box-shadow:0px 2px 6px 0px #2D363F;
   }
 }
+.contact{
+  background-color:#FF725E;
+  padding-top:70px;
+  padding-bottom:60px;
+  
+}
+.full{
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  justify-content:center;
+  align-content:center;
+  background-color:#FF725E;
+}
+.account a img{
+  width:44px;
+  height:44px;
+  background-color:#FF725E;
+  transition: 0.2s;
+}
+.account a img:hover{
+  transform: scale(1.2);
+}
+.account a{
+  background-color:#FF725E;
+}
+.full span{
+  color:#212831;
+  font-family:poppins;
+  text-align:center;
+  font-size:20px;
+  font-weight:400;
+  background-color:#FF725E;
+}
+.account{
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  gap:40px;
+  background-color:#FF725E;
+}
+

@@ -16,7 +16,7 @@
     <span></span>
     </div>
     <ul>
-    <li><a class="nav-link" href="#home">Home</a></li>
+    <li><a class="nav-link active" href="#home">Home</a></li>
     <li><a class="nav-link" href="#about">About</a></li>
     <li><a class="nav-link" href="#skills">Skills</a></li>
     <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -33,7 +33,7 @@
         </div>
        </div>
     </section>
-    <section class="about" id="about"></section>
+    <section class="about" id="about">
     <div class="container">
     <img id="ilus" src="pana.svg" alt="pic">
     <div class="content">
@@ -110,11 +110,11 @@
  
       function changeActiveLink() {
       let index = sections.length - 1;
- 
-      while (window.scrollY + 50 < sections[index].offsetTop) {
+      while (window.scrollY +50< (sections[index] && sections[index].offsetTop)) {
        index = index - 1;
+       console.log("insideloop");
       }
- 
+      console.log(index,sections,sections[index],window.scrollY,sections[index].offsetTop);
       allNavLinks.forEach(function (link) {         
       link.classList.remove('active') });
       allNavLinks[index].classList.add('active');

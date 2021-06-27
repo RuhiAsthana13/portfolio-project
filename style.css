@@ -374,7 +374,7 @@ ul.open{
   margin-left:128px;*/
   padding-top: 20px;
   gap:100px;
-  margin-bottom:100px;
+  margin-bottom:50px;
   max-width: 1140px;
   margin-right:auto;
   margin-left:auto;
@@ -391,6 +391,7 @@ ul.open{
   margin-bottom:50px;
   font-family:poppins;
   font-weight:440;
+  margin-left: 20px;
 }
 .grid{
    display:grid;

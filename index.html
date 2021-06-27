@@ -110,7 +110,7 @@
  
       function changeActiveLink() {
       let index = sections.length - 1;
-      while (window.scrollY +50< (sections[index] && sections[index].offsetTop)) {
+      while (window.scrollY< (sections[index] && sections[index].offsetTop)) {
        index = index - 1;
        console.log("insideloop");
       }

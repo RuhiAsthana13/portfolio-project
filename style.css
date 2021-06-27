@@ -498,7 +498,6 @@ ul.open{
   background-color:#FF725E;
   padding-top:70px;
   padding-bottom:60px;
-  
 }
 .full{
   display:flex;
@@ -538,5 +537,20 @@ ul.open{
   gap:40px;
   background-color:#FF725E;
 }
-
+@media (max-width: 800px){
+  .account a img{
+    width:30px;
+    height:30px;
+    background-color:#FF725E;
+    transition: 0.2s;
+  }
+  .full span{
+    color:#212831;
+    font-family:poppins;
+    text-align:center;
+    font-size:16px;
+    font-weight:400;
+    background-color:#FF725E;
+  }
+}
 

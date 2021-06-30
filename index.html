@@ -19,7 +19,6 @@
     <li><a class="nav-link active" href="#home">Home</a></li>
     <li><a class="nav-link" href="#about">About</a></li>
     <li><a class="nav-link" href="#skills">Skills</a></li>
-    <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </div>
     <section class="home" id="home">
@@ -110,7 +109,7 @@
  
       function changeActiveLink() {
       let index = sections.length - 1;
-      while (window.scrollY< (sections[index] && sections[index].offsetTop)) {
+      while (window.scrollY +20< (sections[index] && sections[index].offsetTop)) {
        index = index - 1;
        console.log("insideloop");
       }
